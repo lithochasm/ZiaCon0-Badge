@@ -1,0 +1,221 @@
+EESchema Schematic File Version 4
+LIBS:ZiaconBadge-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Ziacon Badge"
+Date ""
+Rev "v1"
+Comp "Wolfnet Archives"
+Comment1 "@lithochasm"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5C95863B
+P 5700 3150
+F 0 "D1" H 5693 3366 50  0000 C CNN
+F 1 "LED" H 5693 3275 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5700 3150 50  0001 C CNN
+F 3 "~" H 5700 3150 50  0001 C CNN
+	1    5700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5C9AFB00
+P 5700 2850
+F 0 "D2" H 5693 3066 50  0000 C CNN
+F 1 "LED" H 5693 2975 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5700 2850 50  0001 C CNN
+F 3 "~" H 5700 2850 50  0001 C CNN
+	1    5700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C9B0106
+P 5000 3450
+F 0 "R1" V 4793 3450 50  0000 C CNN
+F 1 "100k" V 4884 3450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4930 3450 50  0001 C CNN
+F 3 "~" H 5000 3450 50  0001 C CNN
+	1    5000 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 3250 4500 3250
+Wire Wire Line
+	4500 3250 4500 3100
+$Comp
+L Device:R R2
+U 1 1 5C9B57A4
+P 5000 3750
+F 0 "R2" V 4793 3750 50  0000 C CNN
+F 1 "100k" V 4884 3750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4930 3750 50  0001 C CNN
+F 3 "~" H 5000 3750 50  0001 C CNN
+	1    5000 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 3650 3500 3650
+$Comp
+L MCU_Microchip_ATtiny:ATtiny13A-PU U1
+U 1 1 5C9AF014
+P 2900 3550
+F 0 "U1" H 2371 3596 50  0000 R CNN
+F 1 "ATtiny13A-PU" H 2371 3505 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2900 3550 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8126.pdf" H 2900 3550 50  0001 C CNN
+	1    2900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2900 3950 3350
+Wire Wire Line
+	3950 3350 3500 3350
+Wire Wire Line
+	3500 3550 5150 3550
+Wire Wire Line
+	5150 3550 5150 3450
+$Comp
+L power:GND #PWR0101
+U 1 1 5C9C1220
+P 5550 2000
+F 0 "#PWR0101" H 5550 1750 50  0001 C CNN
+F 1 "GND" H 5555 1827 50  0000 C CNN
+F 2 "" H 5550 2000 50  0001 C CNN
+F 3 "" H 5550 2000 50  0001 C CNN
+	1    5550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C9C267A
+P 5950 2000
+F 0 "#PWR0102" H 5950 1750 50  0001 C CNN
+F 1 "GND" H 5955 1827 50  0000 C CNN
+F 2 "" H 5950 2000 50  0001 C CNN
+F 3 "" H 5950 2000 50  0001 C CNN
+	1    5950 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C9C2EA4
+P 2900 4450
+F 0 "#PWR0103" H 2900 4200 50  0001 C CNN
+F 1 "GND" H 2905 4277 50  0000 C CNN
+F 2 "" H 2900 4450 50  0001 C CNN
+F 3 "" H 2900 4450 50  0001 C CNN
+	1    2900 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4150 2900 4450
+$Comp
+L power:GND #PWR0104
+U 1 1 5C9C3BF1
+P 5150 2000
+F 0 "#PWR0104" H 5150 1750 50  0001 C CNN
+F 1 "GND" H 5155 1827 50  0000 C CNN
+F 2 "" H 5150 2000 50  0001 C CNN
+F 3 "" H 5150 2000 50  0001 C CNN
+	1    5150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0106
+U 1 1 5C9C50E2
+P 2900 1950
+F 0 "#PWR0106" H 2900 1800 50  0001 C CNN
+F 1 "VCC" H 2917 2123 50  0000 C CNN
+F 2 "" H 2900 1950 50  0001 C CNN
+F 3 "" H 2900 1950 50  0001 C CNN
+	1    2900 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1950 2900 2950
+Wire Wire Line
+	3150 1950 2900 1950
+Connection ~ 2900 1950
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5C9D0E5C
+P 4250 1800
+F 0 "BT1" V 4505 1850 50  0000 C CNN
+F 1 "3V" V 4414 1850 50  0000 C CNN
+F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" V 4250 1860 50  0001 C CNN
+F 3 "~" V 4250 1860 50  0001 C CNN
+	1    4250 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 1800 3150 1800
+Wire Wire Line
+	3150 1800 3150 1950
+$Comp
+L Device:R R3
+U 1 1 5CA20B6E
+P 6000 3150
+F 0 "R3" V 5793 3150 50  0000 C CNN
+F 1 "220" V 5884 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5930 3150 50  0001 C CNN
+F 3 "~" H 6000 3150 50  0001 C CNN
+	1    6000 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5CA2108A
+P 6000 2850
+F 0 "R4" V 5793 2850 50  0000 C CNN
+F 1 "220" V 5884 2850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5930 2850 50  0001 C CNN
+F 3 "~" H 6000 2850 50  0001 C CNN
+	1    6000 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 1800 5650 1800
+Wire Wire Line
+	5550 2850 5400 2850
+Wire Wire Line
+	5550 3150 5250 3150
+Wire Wire Line
+	4500 3100 5200 3100
+Wire Wire Line
+	5200 3100 5200 3400
+Wire Wire Line
+	5200 3400 6200 3400
+Wire Wire Line
+	6200 3400 6200 3150
+Wire Wire Line
+	6200 3150 6150 3150
+Wire Wire Line
+	5250 3150 5250 2000
+Wire Wire Line
+	5250 2000 5150 2000
+Wire Wire Line
+	5400 2850 5400 2000
+Wire Wire Line
+	5400 2000 5550 2000
+Wire Wire Line
+	5650 1750 5950 1750
+Wire Wire Line
+	5950 1750 5950 2000
+Wire Wire Line
+	5650 1750 5650 1800
+Wire Wire Line
+	3950 2900 6150 2900
+Wire Wire Line
+	6150 2900 6150 2850
+Wire Wire Line
+	5150 3650 5150 3750
+$EndSCHEMATC
